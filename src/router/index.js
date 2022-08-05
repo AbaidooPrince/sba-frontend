@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import admin from "./admin";
 import results from "./results";
+import students from "./students";
 
 const index = [
   {
@@ -48,7 +49,7 @@ const index = [
     },
   },
 ];
-const routes = index.concat(results, admin);
+const routes = index.concat(results, admin, students);
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
